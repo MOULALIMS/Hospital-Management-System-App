@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="#F8EEEC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UselessLeaf">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_background1"
+            android:contentDescription="null"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome Here"
+            tools:ignore="HardcodedText"
+            android:textSize="40sp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:fontFamily="serif"/>
+
+        <EditText
+            android:id="@+id/signinemail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="User email id"
+            android:ems="10"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="28dp"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/email"
+            android:drawablePadding="15dp"
+            android:layout_marginTop="20dp"
+            android:paddingStart="20dp"
+            android:background="@drawable/circle"
+            tools:ignore="RtlSymmetry"
+            android:autofillHints="email"
+            android:inputType="textEmailAddress"/>
+        <EditText
+            android:id="@+id/signinpassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:hint="password"
+            android:ems="10"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="28dp"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/password"
+            android:drawablePadding="15dp"
+            android:paddingStart="20dp"
+            android:background="@drawable/circle"
+            android:inputType="textPassword"
+            tools:ignore="RtlSymmetry" />
+        <Button
+            android:id="@+id/signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/buttoncolour"
+            android:text="Sign in"
+            android:textColor="@color/white"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/signingoogle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/google_cirlce"
+            android:text="Signin with google"
+            android:drawableStart="@drawable/google"
+            android:paddingStart="15dp"
+            android:layout_gravity="center"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/redirectsignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click here to create account"
+            android:layout_gravity="center"
+            android:textColor="#0000ff"
+            android:layout_marginBottom="20dp"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+</ScrollView>

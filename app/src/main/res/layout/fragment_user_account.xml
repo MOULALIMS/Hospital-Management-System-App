@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserAccount">
+        
+        <ImageView
+            android:id="@+id/imageview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/top_pbackground"/>
+
+        <ImageView
+            android:id="@+id/userimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="155dp"
+            android:background="@drawable/profile"
+            android:contentDescription="none" />
+
+        <TextView
+            android:id="@+id/userprofilename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato"
+            android:text="Username"
+            android:layout_below="@id/userimage"
+            android:textSize="45sp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="normal"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/contacttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userprofilename"
+            android:layout_marginTop="25dp"
+            android:text="Contact Number"
+            android:textColor="@color/black"
+            android:layout_marginStart="35dp"/>
+        <TextView
+            android:id="@+id/dbphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/contacttext"
+            android:layout_marginTop="25dp"
+            android:layout_below="@id/userprofilename"
+            android:text="Add Phone"
+            android:layout_marginStart="90dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/emaildtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contacttext"
+            android:layout_marginTop="25dp"
+            android:text="Email Id"
+            android:textColor="@color/black"
+            android:layout_marginStart="35dp"/>
+        <TextView
+            android:id="@+id/dbemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/contacttext"
+            android:layout_marginTop="25dp"
+            android:layout_below="@id/contacttext"
+            android:text="Add Email"
+            android:layout_marginStart="90dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/gendertext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emaildtext"
+            android:layout_marginTop="25dp"
+            android:text="Gender"
+            android:textColor="@color/black"
+            android:layout_marginStart="35dp"/>
+        <TextView
+            android:id="@+id/dbgender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/contacttext"
+            android:layout_marginTop="25dp"
+            android:layout_below="@id/emaildtext"
+            android:text="Add Gender"
+            android:layout_marginStart="90dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/bloodgrouptext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gendertext"
+            android:layout_marginTop="25dp"
+            android:text="Blood Group"
+            android:textColor="@color/black"
+            android:layout_marginStart="35dp"/>
+        <TextView
+            android:id="@+id/dbbloodgroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/contacttext"
+            android:layout_marginTop="25dp"
+            android:layout_below="@id/gendertext"
+            android:text="Add BloodGroup"
+            android:layout_marginStart="90dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/locationtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bloodgrouptext"
+            android:layout_marginTop="25dp"
+            android:text="Location"
+            android:textColor="@color/black"
+            android:layout_marginStart="35dp"/>
+        <TextView
+            android:id="@+id/dblocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/contacttext"
+            android:layout_marginTop="25dp"
+            android:layout_below="@id/bloodgrouptext"
+            android:text="Add Location"
+            android:layout_marginStart="90dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/signout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:background="@drawable/bck_bgrnd_blue"
+            android:text="lOG OUT"
+            android:textColor="@color/white"
+            android:layout_below="@id/locationtext"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"/>
+</RelativeLayout>
